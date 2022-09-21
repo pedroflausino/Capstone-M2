@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@700&display=swap');
+
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    background: #DEE2E6;;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+  
+}
+
+
+#register-form{
+    width: 80%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+    box-sizing: border-box;
+
+}
+
+h1{
+    width: 127px;
+    height: 22px;
+    left: 155px;
+    top: 32px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+a{
+    width: 150px;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    color:  #FF2253;
+    text-decoration: none;
+}
+
+
+input{
+    display: flex;
+    width: 246px;
+    height: 42px;
+    left: 93px;
+    top: 85px;
+    background: #F3F3F3;
+    border-radius: 4px ;
+    border: none;
+    color: #5F5C5C;
+    font-style: normal;
+    padding: 0 10px;
+}
+
+input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+button{
+    width: 132px;
+    height: 42px;
+    left: 148px;
+    top: 329px;
+    background:  #FF2253;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    color: #FFFFFF;
+}
+
+button:hover{
+    background: white;
+    color:#FF2253;
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+
+
+    .container{
+        width: 428px;
+        height: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #register-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;  
+    }
+    input{
+        width: 346px;
+        height: 60px;
+    }
+    a{
+        margin-left: 15vw;
+    }
+  }

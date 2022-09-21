@@ -1,0 +1,542 @@
+header {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#titulo__header {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    margin-left: 9.5vw;
+}
+
+#titulo__header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 21.6949px;
+    line-height: 33px;
+    color: #212529;
+}
+
+#titulo__header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.2712px;
+    line-height: 24px;
+    color: #FF2253;
+}
+
+#input__header {
+    background: #E9ECEF;
+    border: 1.5px solid #E9ECEF;
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 18px 15px 16px;
+    margin-right: 9vw;
+    gap: 7px;
+}
+
+
+#cadastro__login{
+    display: flex;
+    align-items: center;
+}
+
+.logar{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: 20px;
+    width: 150px;
+    height: 50px;
+    justify-content: space-around;
+}
+
+.links{
+    font-family: 'Poppins', sans-serif;
+    color: #FF2253;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+#input__header input {
+    color: #868E96;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    background: #E9ECEF;
+}
+
+#input__header input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#input__header img {
+    height: 13px;
+    width: 13px;
+}
+
+#input__header button {
+    border: none;
+    background: #E9ECEF;
+}
+
+#input__header button:hover {
+    cursor: pointer;
+}
+
+#filtros {
+    display: flex;
+}
+
+#filtros img {
+    height: 15px;
+    width: 15px;
+}
+
+
+.btn__clicado {
+    background-color: #FF2253;
+    color: #F8F9FA;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.btn__nav {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    border: none;
+    gap: 15px;
+    border-radius: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.btn__nav:hover {
+    cursor: pointer;
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#filtros__produtos {
+    display: inline-block;
+    width: 60vw;
+}
+
+#header__carrinho {
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 56px;
+    background: #FF2253;
+    border-radius: 12px 12px 0px 0px;
+    padding-left: 23px;
+}
+
+#header__carrinho i {
+    height: 14px;
+    width: 14px;
+    padding-right: 20px;
+    background-color: #FF2253;
+}
+
+#header__carrinho p {
+    width: 71px;
+    height: 27px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.body__carrinhoVazio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 296px;
+    background: #F8F9FA;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.body__carrinhoVazio p {
+    height: 44px;
+    width: 243px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #868E96;
+}
+
+@media (max-width: 450px) {
+    header {
+        height: 160px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    #titulo__header {
+        margin-top: 20px;
+    }
+
+    #input__header {
+        margin-top: 3vh;
+        margin-left: 10vw;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #filtros {
+        overflow-x: auto;
+        width: 160%;
+        margin: 0 5px;
+        height: auto;
+    }
+
+    #container__carrinho {
+        width: 319px;
+        max-height: 521px;
+        bottom: 0;
+        position: fixed;
+    }
+
+    #header__carrinho {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 94vw;
+        column-gap: 5px;
+    }
+
+    #header__carrinho img {
+        padding-right: 0;
+    }
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.status {
+    width: 496px;
+    height: 143px;
+}
+
+.titulo-status {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.color {
+    width: 100%;
+    height: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.colorRed {
+    background-color: #FF2253;
+}
+
+.colorGreen {
+    background-color: #39DF8F;
+}
+
+.status div {
+    display: flex;
+    background-color: #F8F9FA;
+    padding: 28px;
+    justify-content: space-between;
+}
+
+.btnErro {
+    background-color: #E9ECEF;
+    font-size: 14px;
+    border-style: none;
+}
+
+.btnErro:hover {
+    cursor: pointer;
+}
+
+.status p {
+    margin-left: 28px;
+}
+
+.fotoPerfilHover {
+    width: 206px;
+    height: 127px;
+}
+
+#hoverLogout {
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    background-color: #F8F9FA;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+#idUsuario {
+    margin: 15px;
+    font-weight: 500;
+}
+
+#container__produtos {
+    width: 59vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.container__productsCardCart {
+    width: 300px;
+    height: 350px;
+    overflow: scroll;
+}
+
+.productCardCart {
+    display: flex;
+    width: 150px;
+    margin: 15px 0 0 5px;
+}
+
+.card__produtos {
+    width: 18vw;
+}
+
+.imagem__produto {
+    width: 18vw;
+    height: 23vh;
+    border-radius: 8px;
+}
+
+.card__produtos h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.desc__produtos {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #868E96;
+}
+
+.card__produtos span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #868E96;
+    background: #E4F7EF;
+    border-radius: 5px;
+}
+
+.preco__produto {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #212529;
+}
+
+.card__produtos button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    border: none;
+    background: #E4F7EF;
+}
+
+.card__produtos button:hover {
+    cursor: pointer;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section__preco__botao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productCardCart div {
+    width: 319px;
+    margin-left: 5px;
+}
+
+.productCardCart div div {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productsCardCart h4 {
+    height: 20px;
+    width: 176px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.img__cardCart img {
+    height: 70px;
+    width: 70px;
+}
+
+.remove {
+    font-size: 10px;
+    font-weight: 900;
+    color: #868E96;
+    margin-top: 6px;
+}
+.remove:hover{
+    cursor: pointer;
+}
+
+.categoria__carrinho {
+    font-size: 12px;
+    color: #868E96;
+    margin: 12px 0 12px 4px;
+}
+
+.preco__carrinho {
+    font-size: 14px;
+    margin: 6px 0 4px 4px;
+}
+
+.total__carrinho {
+    width: 273px;
+    display: block;
+    margin: 0px;
+}
+
+.total__carrinho div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    height: 56px;
+    align-items: center;
+}
+
+.productCardCart {
+    display: flex;
+    width: 100%;
+    margin: 15px 0 0 5px;
+}
+
+.productCardCart div {
+    width: 100%;
+    margin-left: 5px;
+}
+
+.productCardCart div div {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productsCardCart h4 {
+    height: 20px;
+    width: 45%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.img__cardCart img {
+    height: 70px;
+    width: 70px;
+}
+
+.remove {
+    font-size: 10px;
+    font-weight: 900;
+    color: #868E96;
+    margin-top: 6px;
+}
+
+.categoria__carrinho {
+    font-size: 12px;
+    color: #868E96;
+    margin: 12px 0 12px 4px;
+}
+
+.preco__carrinho {
+    font-size: 14px;
+    margin: 6px 0 4px 4px;
+}
+
+.total__carrinho {
+    display: block;
+    margin-right: 5px;
+}
+
+.total__carrinho div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    height: 56px;
+    align-items: center;
+    padding: 0 15px;
+
+}
+
+.quantidade__carrinho {
+    background-color: #FF2253;
+    border-radius: 0px 0px 12px 12px;
+    padding: 0 15px;
+
+}

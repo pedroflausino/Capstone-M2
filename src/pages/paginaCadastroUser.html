@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>m2-entrega-blog-m2</title>
+  <link rel="stylesheet" href="../style/reset.css">
+  <link rel="stylesheet" href="../style/stylePaginaCadastro.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <form id="register-form">
+      <a href="/src/pages/paginaLoginUser.html">Login</a>
+
+      <h1>Cadastro</h1>
+
+      <section class="input-box">
+        <input type="text" name="name" id="name" placeholder="Nome de usuário" required />
+      </section>
+
+      <section class="input-box">
+        <input type="email" name="email" id="email" placeholder="Email" required />
+      </section>
+
+      <section class="input-box">
+        <input type="password" name="password" id="password" placeholder="Senha" required />
+      </section>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+  <script src="/src/models/consumirApiCadastro.js"></script>
+  <script src="/src/controller/controllerCadastro.js"></script>
+  
+</body>
+
+</html>

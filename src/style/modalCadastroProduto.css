@@ -1,0 +1,303 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500,700&family=Montserrat:wght@700&display=swap'); */
+
+
+section.ExibirModal{
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    
+}
+
+section#editaProduto{
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;  
+}
+
+
+
+#modal{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    height: 655px;
+    top: 25px;
+    margin: 0px auto;
+    
+}
+
+
+#modalEdita{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    height: 655px;
+    top: 25px;
+    margin: 0px auto;
+    
+}
+
+
+section#removeProduto{
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;  
+}
+
+form#modalRemove{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    width: 496px;
+    height: 283px;
+    top: 25px;
+    margin: 0px auto;
+
+}
+
+
+p.remover{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    background-color: white;
+    padding: 0;
+}
+
+
+.cadastro{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 70px;
+    background: #F8F9FA;
+    justify-content: space-around;
+    border-radius: 12px;
+    
+}
+
+
+.cabecalho{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    width: 149px;
+    height: 20px;
+
+}
+
+span.removeModal{
+        
+    width: 31px;
+    height: 30px;
+    left: 437px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #E9ECEF;
+    color: #868E96;
+    border-radius: 4px;
+}
+
+
+label.Nomes{
+    
+    color: #212529;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 0px;
+    margin-left: 20px;
+}
+
+
+input.CadastroInput{
+    background: #F8F9FA;
+    border: 1.5px solid #DEE2E6;
+    border-radius: 12px;
+    width: 340px;
+    height: 52px;
+    margin-left: 20px;
+
+}
+
+input.CadastroDescricao{
+    background: #F8F9FA;
+    border: 1.5px solid #DEE2E6;
+    border-radius: 12px;
+    width: 340px;
+    height: 80px;
+    margin-left: 20px;
+}
+
+div.categoriasSpan{
+    display: flex;
+    justify-content: space-between;
+    width: 396px;
+   color: #868E96; 
+
+}
+
+
+
+input.categorias{
+    visibility: hidden;
+    position: absolute;
+
+}
+
+input.categorias + label{
+    cursor: pointer;
+    display: inline-block;
+}
+
+input.categorias:checked + label{
+    background-color: #FF2253;
+    color: #868E96;
+
+}
+
+
+label.categorias{
+    z-index: 0;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 20px;
+    border: 1.5px solid #F8F9FA;
+    border-radius: 32px;
+    background: #F5F5F5;
+    font-family: 'Inter';
+    font-style: normal;
+    color: #868E96; 
+
+}
+
+.removeModal, .btn, button{
+    cursor: pointer;
+}
+
+label.categorias:hover{
+    background-color: #FF2253;
+    color: #DEE2E6;
+}
+
+
+button.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+    width: 390px;
+    color: #F8F9FA;
+    background: #FF2253;
+    border: 1.5px solid #FF2253;
+    border-radius: 32px;
+    margin-bottom: 20px;
+    margin-left: 7px;
+}
+
+div.botoes{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    width: 340px;
+    color: #F8F9FA;
+    border-radius: 32px;
+    margin-bottom: 20px;
+    margin-left: 7px;
+   
+}
+
+button.btnExclui{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 50px;
+    background: #F8F9FA;
+    border: 1.5px solid #F8F9FA;
+    border-radius: 32px;
+    color: #868E96;
+}
+
+button.btnSalva{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 50px;
+    left: 780px;
+    top: 709px;
+    background: #F8F9FA;
+    border: 1.5px solid #F8F9FA;
+    border-radius: 32px;
+    background: #FF2253;
+    color: #DEE2E6;
+
+}
+
+button.sim{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 50px;
+    background: #F8F9FA;
+    border: 1.5px solid #F8F9FA;
+    border-radius: 32px;
+    color: #868E96;
+}
+
+button.nao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 50px;
+    background: #F8F9FA;
+    border: 1.5px solid #F8F9FA;
+    border-radius: 32px;
+    color: #868E96;
+}

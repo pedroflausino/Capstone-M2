@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../style/stylePagPrinc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4979875b32.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="status sucesso">
+        <div>
+            <span class="titulo-status">Status</span><button type="submit"><i class="btnSucesso fa-solid fa-xmark"></i></button>
+        </div>
+        <p>Produto adicionado com sucesso</p>
+        <section class="color colorGreen"></section> 
+    </div>
+    <br>
+
+    <div class="status erro">       
+        <div>
+            <span class="titulo-status">Status</span><button type="submit"><i class="btnErro fa-solid fa-xmark"></i></button>
+        </div>
+        <p>Ocorreu algum erro, o produto não foi adicionado</p>
+        <section class="color colorRed"></section>
+    </div> 
+    <br>
+    <div class="fotoPerfilHover">
+        <p id="idUsuario">Time A</p>
+        <hr>
+        <p id="hoverLogout">Logout</p>
+        
+    </div>
+
+    <script src="../models/script.js"></script>
+    <script src="/src/models/scriptPopUps.js"></script>
+    
+</body>
+</html>

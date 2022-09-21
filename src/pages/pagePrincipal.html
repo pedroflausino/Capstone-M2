@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/stylePagPrinc.css">
+    <script src="https://kit.fontawesome.com/4979875b32.js" crossorigin="anonymous"></script>
+    <title>Kenzie Food</title>
+</head>
+
+<body>
+    <header>
+        <section id="titulo__header">
+            <h1>Kenzie</h1>
+            <h2>Food</h2>
+        </section>
+
+        <section id="cadastro__login">
+            <section class="logar">
+                <a class="links" href="../pages/paginaCadastroUser.html">Cadastre-se</a>
+                <a class="links" href="../pages/paginaLoginUser.html">Olá, faça seu Login</a>
+            </section>
+
+        <section id="input__header">
+            <button><img src="../img/lupa.svg" alt="Lupa"></button>
+            <input class="pesquisa" type="text" placeholder="Pesquisar por produto">
+        </section>
+
+        </section>
+
+    </header>
+    <main>
+        <section id="filtros__produtos">
+            <section id="filtros">
+                <button class="btn__nav btn__clicado" id="botao__todos">Todos</button>
+                <button class="btn__nav" id="filtrar__panificadora"><img src="../img/pão.svg" alt="pão">Panificadora</button>
+                <button class="btn__nav" id="filtrar__frutas" ><img src="../img/bananas.svg" alt="fruta">Frutas</button>
+                <button class="btn__nav" id="filtrar__bebidas" ><img src="../img/vinho.svg" alt="bebida">Bebidas</button>
+            </section>
+            <section id="container__produtos">
+
+            </section>
+        </section>
+        <aside id="container__carrinho">
+            <section id="header__carrinho">
+                <i class="icone__carrinho fa-solid fa-cart-arrow-down"></i>
+                <p>Carrinho</p>
+            </section>
+            <section class="body__carrinhoVazio">
+                <i class="icone__sacola fa fa-bag-shopping fa-spin fa-3x"></i>
+                <p>Por enquanto não temos produtos no carrinho</p>
+            </section>
+            <section class="container__productsCardCart">             
+            </section>
+        </aside>
+    </main>
+    <script type="module" src="../controller/getProdutosController.js"></script>
+    <script type="module" src="../models/renderizarProdutos.js"></script>
+    <script type="module" src="../controller/carrinhoCompras.js"></script>
+    <script type="module" src="../controller/controllerFiltros.js"></script>
+    <script type="module" src="../models/filtrosPagePrinc.js"></script>
+</body>
+
+</html>

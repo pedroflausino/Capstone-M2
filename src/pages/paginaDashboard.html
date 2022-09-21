@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./../style/reset.css">
+    <link rel="stylesheet" href="./../style/Dashboard.css">
+    <link rel="stylesheet" href="../style/modalCadastroProduto.css">
+    <script src="https://kit.fontawesome.com/4979875b32.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="titulo">
+            <a href="./pagePrincipal.html" id="titulo_1">Kenzie</a>
+            <h3 id="titulo_2">Food</h3>
+        </div>
+        <div id="direita">
+            <div id="pesquisa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Pesquisar por produto">
+            </div>
+            <img id="usuario" src="./../img/frame1.png" alt="Usuário">
+        </div>
+    </header>
+    <main>
+        <nav>
+            <div id="filtros">
+                <p id="filtrar__todos" class="btn__nav btn__clicado">Todos</p>
+                <p id="filtrar__panificadora" class="btn__nav"> <img src="./../img/pao.png" alt="" srcset="">Panificadora</p>
+                <p id="filtrar__frutas" class="btn__nav"> <img src="./../img/frutas.png" alt="" srcset="">Frutas</p>
+                <p id="filtrar__bebidas" class="btn__nav">  <img src="./../img/vinho.png" alt="" srcset="">Bebidas</p>
+            </div>
+            <div>
+                <button id="add_produtos">Adicionar novo produto</button>
+            </div>
+        </nav>
+        <div id="container">
+            <ul id="cabecario">
+                <li>Produtos</li>
+                <li>Categorias</li>
+                <li>Descrição</li>
+                <li>Ações</li>
+            </ul>
+            <div id="container__produtos">
+
+            </div>
+        </div>
+
+        <section class="ExibirModal"></section>
+
+        <section id="editaProduto"> </section>
+
+        <section id="removeProduto"></section>
+
+    </main>
+    <script type="module" src="../controller/ModalDashboard.js"> </script>
+    <script type="module" src="../models/filtrosDashboard.js"></script>
+    
+    
+</body>
+</html>
